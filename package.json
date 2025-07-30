@@ -11,9 +11,9 @@
  
   "build:ssr": "ng build && ng run your-app-name:server",
   "serve:ssr": "node dist/server/main.js"
-}
+},
 
-  },
+  
   "prettier": {
     "overrides": [
       {
