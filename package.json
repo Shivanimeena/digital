@@ -8,12 +8,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:ds": "node dist/ds/server/server.mjs",
- 
-  "build:ssr": "ng build && ng run your-app-name:server",
-  "serve:ssr": "node dist/server/main.js"
-},
-
-  
+    "build:ssr": "ng build && ng run your-app-name:server",
+    "serve:ssr": "node dist/server/main.js"
+  },
   "prettier": {
     "overrides": [
       {
@@ -34,6 +31,7 @@
     "@angular/platform-server": "^20.1.2",
     "@angular/router": "^20.1.2",
     "@angular/ssr": "^20.1.1",
+    "@netlify/angular-runtime": "^2.2.0",
     "aos": "^2.3.4",
     "express": "^5.1.0",
     "ngx-swiper-wrapper": "^10.0.0",
