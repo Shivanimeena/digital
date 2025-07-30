@@ -2,14 +2,10 @@ import { CommonModule, isPlatformBrowser, NgIf } from '@angular/common';
 import { Component, AfterViewInit, ElementRef, inject, PLATFORM_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-
-
-
-
 @Component({
   selector: 'app-front',
   standalone: true,
-  imports: [CommonModule, FormsModule, ],
+  imports: [CommonModule , FormsModule , ],
   templateUrl: './front.html',
   styleUrls: ['./front.css']
 })
