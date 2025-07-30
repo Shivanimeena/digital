@@ -7,7 +7,12 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:ds": "node dist/ds/server/server.mjs"
+    "serve:ssr:ds": "node dist/ds/server/server.mjs",
+ 
+  "build:ssr": "ng build && ng run your-app-name:server",
+  "serve:ssr": "node dist/server/main.js"
+}
+
   },
   "prettier": {
     "overrides": [
