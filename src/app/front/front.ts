@@ -247,4 +247,54 @@ initFoundersCanvasAnimation() {
       elements.forEach((el: Element) => observer.observe(el));
     }
   }
+
+//   featuredBrands = [
+//   { name: 'ViomCare', logo: '/vio.png' },
+//   { name: 'Rich Basket', logo: '/rich.png' },
+//   { name: 'The Shake Maker', logo: '/shake.png' },
+//   { name: 'Glory Kids Preschool', logo: '/glory.png' },
+//   { name: 'Little Vogue House', logo: '/vogue.png' },
+//   { name: 'Ganesh Housing', logo: '/ganesh.png' },
+//   { name: 'Safalam Agro', logo: '/agro.png' },
+//   // Add more brands as needed
+// ];
+
+// Component Class
+featuredBrands = [
+  { 
+    name: 'ViomCare', 
+    displayName: 'ViomCare',
+    logo: '/vio.png' 
+  },
+  { 
+    name: 'little-vogue', 
+    displayName: 'Little Vogue House',
+    logo: '/vogue.png' 
+  },
+  { 
+    name: 'rich-basket', 
+    displayName: 'Rich Basket',
+    logo: '/rich.png' 
+  },
+  { 
+    name: 'The Shake Maker', 
+    displayName: 'The Shake Maker',
+    logo: '/shake.png' 
+  },
+  { 
+    name: 'ganesh-housing', 
+    displayName: 'Ganesh Housing',
+    logo: '/ganesh.png' 
+  },
+  { 
+    name: 'Safalam Agro', 
+    displayName: 'Safalam Agro',
+    logo: '/agro.png',
+  },
+  { 
+    name: 'Glory Kids Preschool', 
+    displayName: 'Glory Kids Pre school',
+    logo: '/glory.png' 
+  }
+];
 }

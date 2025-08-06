@@ -13,7 +13,8 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-             "outputPath": "dist",
+             
+            
 
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
@@ -31,6 +32,8 @@
             
 "scripts": [
   "node_modules/aos/dist/aos.js"
+   
+
 ],
             "server": "src/main.server.ts",
             "outputMode": "server",
@@ -81,12 +84,20 @@
           "builder": "@angular/build:karma",
           "options": {
             "tsConfig": "tsconfig.spec.json",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
+          
+ 
+ "assets": [
+  "src/favicon.ico",
+  "src/assets",
+  {
+    "glob": "**/*",
+    "input": "public",
+    "output": "/public/"
+  }
+],
+
+
+
             "styles": [
               "src/styles.css"
             ]

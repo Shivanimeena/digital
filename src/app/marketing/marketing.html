@@ -1,3 +1,4 @@
+<!-- Hero Section -->
 <section class="hero">
   <div class="hero-content">
     <h1>360° Marketing Solutions Tailored for You</h1>
@@ -6,14 +7,13 @@
   </div>
 </section>
 
-
-
+<!-- Why Marketing Matters Section -->
 <section class="intro-section">
   <div class="container intro-layout">
     <div class="intro-text">
       <h2 class="heading">Why Marketing Matters</h2>
       <p class="subheading">
-       In today’s crowded digital landscape, impactful marketing helps your brand cut through the noise and connect with your audience authentically. From strategy to execution, we build campaigns that not only engage but convert.
+        In today's crowded digital landscape, impactful marketing helps your brand cut through the noise and connect with your audience authentically. From strategy to execution, we build campaigns that not only engage but convert.
         <strong>GS Media</strong> 
       </p>
     </div>
@@ -24,78 +24,183 @@
 </section>
 
 
-
-   
-
-
-
-<section class="marketing-section">
-  <div class="container">
-    <h2 class="section-heading">Our Services</h2>
-    <div class="services-grid">
-      <div class="service-card">
+<section class="services-section">
+  <h2 class="section-heading">Our Services</h2>
+  <div class="services-container">
+    <!-- Service 1 -->
+    <div class="box-s">
+      <div class="icon-s">
+        <i class="fas fa-chart-line"></i>
+      </div>
+      <div class="content-s">
         <h3>1. Social Media Growth & Management</h3>
-        <p>We craft content strategies, manage platforms, and grow communities on Instagram, Facebook, LinkedIn & YouTube. Our goal? To keep your audience engaged, entertained, and loyal.</p>
+        <p>We craft content strategies, manage platforms, and grow communities on Instagram, Facebook, LinkedIn & YouTube.</p>
       </div>
+    </div>
 
-      <div class="service-card">
+    <!-- Service 2 -->
+    <div class="box-s">
+      <div class="icon-s">
+        <i class="fas fa-user-astronaut"></i>
+      </div>
+      <div class="content-s">
         <h3>2. Influencer & Celebrity Marketing</h3>
-        <p>Connect with the right faces that resonate with your audience. We bring you nano, micro, and celebrity influencers to elevate your brand’s credibility.</p>
+        <p>Connect with mass, micro, and celebrity influencers to elevate your brand's credibility.</p>
       </div>
+    </div>
 
-      <div class="service-card">
-        <h3>3. SEO, Google Ads, & Performance Marketing</h3>
-        <p>Rank higher. Convert faster. We manage your digital ads and organic growth strategy for better ROI.</p>
+    <!-- Service 3 -->
+    <div class="box-s">
+      <div class="icon-s">
+        <i class="fas fa-bullhorn"></i>
       </div>
+      <div class="content-s">
+        <h3>3. SEO, Google Ads & Performance Marketing</h3>
+        <p>Rank higher. Convert faster. We manage your digital ads and organise strategy for better ROI.</p>
+      </div>
+    </div>
 
-      <div class="service-card">
+    <!-- Service 4 -->
+    <div class="box-s">
+      <div class="icon-s">
+        <i class="fas fa-calendar-alt"></i>
+      </div>
+      <div class="content-s">
         <h3>4. Experiential Campaigns & Events</h3>
-        <p>From pop-ups to school campaigns and flash mobs — we create experiences that go beyond screens.</p>
+        <p>From pop-ups to flash mobs — we create experiences that go beyond screens.</p>
       </div>
     </div>
   </div>
 </section>
+<!-- Contact Section -->
 
 
+<section class="branding-section">
+  <h2 class="branding-title">Our Unique 6-Step Branding Process</h2>
+  <div class="branding-grid">
 
+    <div class="branding-item">
+      <!-- Research Icon -->
+      <svg class="icon" viewBox="0 0 24 24" fill="none">
+        <path d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z" stroke="#b40020" stroke-width="2"/>
+      </svg>
+      <h3>Research</h3>
+      <p>We begin with in-depth research to understand your industry, target audience, and competition. 
+      This includes analyzing existing marketing materials, brand perception, and customer behavior to define the real business problem and opportunity areas.</p>
+    </div>
 
-<!-- <section class="cta">
-  <h2>Ready to Elevate Your Brand?</h2>
-  <p>Let’s collaborate and build a marketing strategy that scales your business.</p>
-  <button routerLink="/contact">Get Started</button>
-</section> -->
+    <div class="branding-item">
+      <!-- Positioning Icon -->
+      <svg class="icon" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2l4 4-4 4-4-4 4-4zM12 14l4 4-4 4-4-4 4-4z" stroke="#b40020" stroke-width="2"/>
+      </svg>
+      <h3>Positioning</h3>
+      <p>We help you co-create your brand’s purpose, positioning statement, and message matrix using 
+      data-backed insights and behavioral psychology. This ensures clarity and alignment across all brand communications and channels.</p>
+    </div>
 
+    <div class="branding-item">
+      <!-- Creative Icon -->
+      <svg class="icon" viewBox="0 0 24 24" fill="none">
+        <path d="M4 20l16-16M8 4h12v12" stroke="#b40020" stroke-width="2"/>
+      </svg>
+      <h3>Creative</h3>
+      <p>We craft compelling visual and verbal brand identities — from logos and taglines to fonts and brand voice. 
+      These creative assets are documented in a brand style guide to ensure consistency across touchpoints.</p>
+    </div>
 
+    <div class="branding-item">
+      <!-- Marketing Icon -->
+      <svg class="icon" viewBox="0 0 24 24" fill="none">
+        <path d="M2 12h20M12 2v20M4 4l16 16" stroke="#b40020" stroke-width="2"/>
+      </svg>
+      <h3>Marketing</h3>
+      <p>We create and execute strategic marketing campaigns—SEO, social media, content, influencer marketing, and video ads—
+      tailored to your audience and business goals. Every campaign is built to drive measurable engagement and growth.</p>
+    </div>
 
-<div class="contact-wrapper">
-  <div class="contact-left">
-    <h2>Get in touch with us</h2>
-    <form (ngSubmit)="onSubmit()" #form="ngForm">
-      <div class="form-row">
-        <input type="text" placeholder="Your Name" name="name" ngModel required>
-        <input type="email" placeholder="Email ID" name="email" ngModel required>
-      </div>
-      <div class="form-row">
-        <input type="text" placeholder="Phone Number" name="phone" ngModel>
-        <input type="text" placeholder="Website" name="website" ngModel>
-      </div>
-      <input type="text" placeholder="Company Name" name="company" ngModel>
-      <textarea rows="4" placeholder="Please share your requirement in detail" name="message" ngModel required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <div class="branding-item">
+      <!-- Management Icon -->
+      <svg class="icon" viewBox="0 0 24 24" fill="none">
+        <path d="M3 12h18M12 3v18M6 6h12v12H6V6z" stroke="#b40020" stroke-width="2"/>
+      </svg>
+      <h3>Management</h3>
+      <p>We offer tools and systems to manage customer touchpoints—feedback, service, and support—ensuring smooth brand-user interaction and increasing retention, satisfaction, and long-term loyalty.</p>
+    </div>
+
+    <div class="branding-item">
+      <!-- Optimization Icon -->
+      <svg class="icon" viewBox="0 0 24 24" fill="none">
+        <path d="M3 3l18 18M9 9a6 6 0 106 6" stroke="#b40020" stroke-width="2"/>
+      </svg>
+      <h3>Optimization</h3>
+      <p>We use data analytics, performance tracking, and user feedback to continuously optimize your brand strategy, messaging, and campaigns—
+      ensuring your brand evolves with market needs and stays future-ready.</p>
+    </div>
+
   </div>
-  <div class="contact-right">
-      <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="phone icon" class="phone-icon" style="margin-top: 40px;">
-  <h3>9033131093</h3>
-   
-    <p>Available 10:00 AM – 6:00 PM</p>
-    <p>Ahmedabad | Surat | Vadodara</p>
-   
+</section>
+
+
+<section class="contact-section">
+  <div class="contact-wrapper">
+    <div class="contact-left">
+      <h2>Get in touch with us</h2>
+      <form (ngSubmit)="onSubmit()" #form="ngForm">
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" name="name" ngModel required>
+          <input type="email" placeholder="Email ID" name="email" ngModel required>
+        </div>
+        <div class="form-row">
+          <input type="text" placeholder="Phone Number" name="phone" ngModel>
+          <input type="text" placeholder="Website" name="website" ngModel>
+        </div>
+        <input type="text" placeholder="Company Name" name="company" ngModel>
+        <textarea rows="4" placeholder="Please share your requirement in detail" name="message" ngModel required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+    <div class="contact-right">
+      <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="phone icon" class="phone-icon">
+      <h3>9033131093</h3>
+      <p>Available 10:00 AM – 6:00 PM</p>
+      <p>Ahmedabad | Surat | Vadodara</p>
+    </div>
+  </div>
+</section>
+
+<h2 class="faq-heading">Frequently Asked Questions</h2>
+<div class="faq-wrapper">
+
+<div class="faq-item">
+  <input type="checkbox" id="faq1">
+  <label for="faq1">1. What marketing services do you offer?</label>
+  <div class="faq-content">
+    <p>We offer a wide range of marketing services tailored to your business needs. These include social media management, paid advertising (Google, Meta), search engine optimization (SEO), content creation, branding, email campaigns, influencer collaborations, and analytics. We create custom strategies to enhance your online presence, drive traffic, increase engagement, and convert leads. Our goal is to make your brand stand out in a competitive digital world with creative, data-backed solutions that bring measurable results.</p>
   </div>
 </div>
 
+<div class="faq-item">
+  <input type="checkbox" id="faq2">
+  <label for="faq2">2. How soon can I see results from a campaign?</label>
+  <div class="faq-content">
+    <p>Campaign results vary depending on goals, platforms, and audience. With paid ads and social media promotions, you can expect initial engagement or traffic within the first week. For SEO and organic growth strategies, it may take 2–3 months to see significant progress. We track real-time data and optimize continuously to boost performance. Our team ensures transparency in reporting so you're always aware of your ROI, and we adjust campaigns based on insights for faster, better results.</p>
+  </div>
+</div>
 
+<div class="faq-item">
+  <input type="checkbox" id="faq3">
+  <label for="faq3">3. Do you work with startups or small businesses?</label>
+  <div class="faq-content">
+    <p>Yes, we specialize in helping startups and small businesses build a strong brand foundation. Our team understands the challenges of limited budgets and resources, so we offer affordable, impactful solutions. Whether you need to build awareness, launch a new product, or boost sales, we provide smart strategies that fit your goals. We act as your extended team, helping you grow steadily with creative, data-driven marketing that speaks to your audience and builds long-term success.</p>
+  </div>
+</div>
 
-
-
-
+<div class="faq-item">
+  <input type="checkbox" id="faq4">
+  <label for="faq4">4. Can I customize a marketing package based on my needs?</label>
+  <div class="faq-content">
+    <p>Absolutely! Every business is unique, and we believe your marketing plan should reflect that. We offer fully customizable packages where you choose the services that align with your goals, budget, and audience. Whether you want just social media support or a full-fledged marketing strategy including SEO, ads, and branding — we adapt to your requirements. Our team works closely with you to plan, execute, and scale your campaigns exactly the way your business demands.</p>
+  </div>
+  </div>
+</div>

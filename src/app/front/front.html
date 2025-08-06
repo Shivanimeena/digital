@@ -45,6 +45,7 @@
 
 
 <section class="hero fade-in">
+
   <div class="hero-content">
     <h1>Transforming Brands into Experiences</h1>
     <p>A full-service digital marketing agency blending creativity, strategy, and innovation — powered from Ahmedabad, delivering impact globally.</p>
@@ -52,6 +53,20 @@
   </div>
 </section>
 
+
+ <!-- <section
+  class="hero fade-in"
+  [ngStyle]="{ 'background-image': 'url(assets/front.jpg)' }"
+>
+  <div class="hero-content">
+    <h1>Transforming Brands into Experiences</h1>
+    <p>
+      A full-service digital marketing agency blending creativity, strategy,
+      and innovation — powered from Ahmedabad, delivering impact globally.
+    </p>
+    <button class="btn" routerLink="/contact">Let's Get Started</button>
+  </div>
+</section> -->
 
 
 
@@ -66,29 +81,36 @@
       <p>Whether you're a startup aiming to stand out or an established brand looking to evolve, we partner with you to bring your vision to life — creatively, strategically, and effectively.</p>
     </div>
     <div class="about-images">
- <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&h=400&fit=crop" alt="Team working" width="400" height="250" loading="lazy" />
-<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop" alt="Office space" width="400" height="250" loading="lazy" />
+ <img src="/image.png" alt="Team working" width="400" height="250" loading="lazy" />
+<img src="/front 2.avif" alt="Office space" width="400" height="250" loading="lazy" />
 
     </div>
   </div>
   </section>
 
-
-  <section class="services fade-in-up" id="services">
+<section class="services fade-in-up" id="services">
   <h2>Our Services</h2>
   <div class="service-grid">
+    <!-- Marketing -->
     <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1508830524289-0adcbe822b40" alt="Marketing" />
+      <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80&sat=-100" 
+           alt="Marketing Analytics">
       <h3>Marketing</h3>
       <p>Comprehensive digital marketing strategies to grow your brand's reach and connect with your audience effectively.</p>
     </div>
+    
+    <!-- Technology -->
     <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1468436139062-f60a71c5c892?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Technology" />
+      <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80&sat=-100" 
+           alt="Technology Solutions">
       <h3>Technology</h3>
       <p>Innovative technology solutions, website and app development for a seamless user experience and business automation.</p>
     </div>
+    
+    <!-- Design -->
     <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Design" />
+      <img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80&sat=-100" 
+           alt="Design Concepts">
       <h3>Design</h3>
       <p>Creative and user-centric design for your brand, ensuring consistency and impactful visual communication across platforms.</p>
     </div>
@@ -134,7 +156,7 @@
 
 
  <!-- Clients Achievements Section -->
-<section id="client-counter" class="counter-section">
+<!-- <section id="client-counter" class="counter-section">
   <h2 class="counter-heading">Our Clients</h2>
 
   <div class="counter-item">
@@ -156,8 +178,24 @@
     <span class="counter-number" data-target="800">0</span>
     <p>Total Clients</p>
   </div>
-</section>
+</section> -->
 
+<!-- HTML Template -->
+<!-- HTML Template -->
+<section class="featured-brands">
+  <div class="container">
+    <h2 class="section-title">Our Featured Brands</h2>
+    <p class="section-subtitle">Trusted by leading names in the industry, we proudly showcase our collaborations.</p>
+
+    <!-- Brand Logos Grid -->
+    <div class="brands-grid">
+      <div class="brand-item" *ngFor="let brand of featuredBrands">
+        <img [src]="brand.logo" [alt]="brand.name" class="brand-logo">
+        <div class="brand-name">{{brand.displayName || brand.name}}</div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
