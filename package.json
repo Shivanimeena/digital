@@ -5,8 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     
-    
     "build": "ng build --configuration=production",
+  "postinstall": "npm run build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:ds": "node dist/ds/server/server.mjs",
