@@ -1,8 +1,17 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ],
+  "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,
-  "outputDirectory": "dist/browser"
+  "builds": [
+    {
+      "src": "dist/browser/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
