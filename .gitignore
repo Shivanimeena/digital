@@ -1,1 +1,3 @@
 node_modules\ndist\n.angular\n.env\n.DS_Store
+node_modules
+.vercel

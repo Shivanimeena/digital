@@ -14,6 +14,8 @@
           "builder": "@angular/build:application",
           "options": {
             "outputPath": "dist/browser",
+             "baseHref": "/",
+      "deployUrl": "/",
              
             
 
@@ -53,7 +55,7 @@
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "20kb",
-                  
+
                   "maximumError": "25kB"
                 }
               ],
