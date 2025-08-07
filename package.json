@@ -4,13 +4,14 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --configuration production --output-path=dist/browser",
+    "build": "ng build ds --configuration production",
     "postinstall": "npm run build",
+    "serve:ssr": "node dist/browser/server/server.mjs",
+    "clean": "rimraf dist .vercel node_modules",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:ds": "node dist/ds/server/server.mjs",
-    "build:ssr": "ng build && ng run your-app-name:server",
-    "serve:ssr": "node dist/server/main.js"
+    "serve:ssr:ds": "node dist/ds/server/server.mjs"
+ 
   },
   "prettier": {
     "overrides": [
@@ -36,13 +37,17 @@
     "@netlify/angular-runtime": "^2.4.0",
     "aos": "^2.3.4",
     "express": "^5.1.0",
+    "glob": "^11.0.3",
+    "lru-cache": "^11.1.0",
+    "rimraf": "^6.0.1",
     "rxjs": "~7.8.2",
     "swiper": "^11.2.10",
     "tslib": "^2.8.1"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "^20.1.5",
     "@angular/build": "^20.1.5",
-    "@angular/cli": "^20.1.5",
+    "@angular/cli": "^17.3.17",
     "@angular/compiler-cli": "^20.1.6",
     "@types/aos": "^3.0.7",
     "@types/express": "^5.0.3",
